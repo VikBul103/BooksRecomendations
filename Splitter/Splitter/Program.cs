@@ -7,7 +7,7 @@ class Program
 {
     static void Main()
     {
-        string sourcePath = "book1-100k.csv";
+        string sourcePath = Path.Combine(Environment.CurrentDirectory, "Data", "book1-100k.csv"); ;
         string testPath = "test.csv";
         var lines = File.ReadAllLines(sourcePath).ToList();
 
