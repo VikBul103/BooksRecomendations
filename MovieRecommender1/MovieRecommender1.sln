@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37012.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRecommender1", "MovieRecommender1\MovieRecommender1.csproj", "{D2840E34-5916-45C1-A79E-CB1C1EAB9837}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksRecommendation", "BooksRecommendation\BooksRecommendation.csproj", "{276A8E7D-4F15-4609-8D2B-A4913AEB9C12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2840E34-5916-45C1-A79E-CB1C1EAB9837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2840E34-5916-45C1-A79E-CB1C1EAB9837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2840E34-5916-45C1-A79E-CB1C1EAB9837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2840E34-5916-45C1-A79E-CB1C1EAB9837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{276A8E7D-4F15-4609-8D2B-A4913AEB9C12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{276A8E7D-4F15-4609-8D2B-A4913AEB9C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{276A8E7D-4F15-4609-8D2B-A4913AEB9C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{276A8E7D-4F15-4609-8D2B-A4913AEB9C12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDAAE794-D910-41A4-8031-FC42A3B4EC2B}
+	EndGlobalSection
+EndGlobal
