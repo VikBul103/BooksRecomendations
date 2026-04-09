@@ -64,22 +64,22 @@ namespace BooksRecommendation
         {
             Console.WriteLine("=============== Making a prediction ===============");
             var predictionEngine = mlContext.Model.CreatePredictionEngine<BooksRating, BooksRatingPrediction>(model);
-            var testInput = new BooksRating { user_id = 6, book_id = 10 };
+            var testInput = new BooksRating { user_id = 53, book_id = 4602 };
 
-            var movieRatingPrediction = predictionEngine.Predict(testInput);
-            if (Math.Round(movieRatingPrediction.Score, 1) > 3.5)
+            var bookRatingPrediction = predictionEngine.Predict(testInput);
+            if (Math.Round(bookRatingPrediction.Score, 1) > 3.5)
             {
-                Console.WriteLine("Movie " + testInput.book_id + " is recommended for user " + testInput.user_id);
+                Console.WriteLine("Book " + testInput.book_id + " is recommended for user " + testInput.user_id);
             }
             else
             {
-                Console.WriteLine("Movie " + testInput.book_id + " is not recommended for user " + testInput.user_id);
+                Console.WriteLine("Book " + testInput.book_id + " is not recommended for user " + testInput.user_id);
             }
         }
 
         public static void SaveModel(MLContext mlContext, DataViewSchema trainingDataViewSchema, ITransformer model)
         {
-            var modelPath = Path.Combine(Environment.CurrentDirectory, "Data", "MovieRecommenderModel.zip");
+            var modelPath = Path.Combine(Environment.CurrentDirectory, "Data", "BookRecommenderModel.zip");
 
             Console.WriteLine("=============== Saving the model to a file ===============");
             Console.WriteLine(modelPath);
