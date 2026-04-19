@@ -1,0 +1,143 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Домашня сторінка";
+}
+
+@* <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    
+</div>
+<div>
+    <p>Bookapp</p>
+</div> *@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fbfaf7;
+            color: #1e2a2e;
+            line-height: 1.5;
+        }
+
+        /* контейнер */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* заголовок */
+        .header {
+            background: #ffffff;
+            border-bottom: 1px solid #e9e6df;
+            position: sticky;
+            background-color: rgba(255, 255, 255, 0.96);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 18px 0;
+        }
+
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: #f3f1ec;
+            transition: all 0.2s;
+            border: 1px solid #e2dfd7;
+            flex: 1;
+            max-width: 380px;
+            min-width: 200px;
+        }
+        .search-box:focus-within {
+            background: #fff;
+            border-color: #c49a6c;
+            box-shadow: 0 0 0 3px rgba(196, 154, 108, 0.2);
+        }
+
+        .search-box input {
+            background: transparent;
+            border: none;
+            padding: 8px 12px;
+            font-size: 0.95rem;
+            width: 100%;
+            outline: none;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* hero */
+        .hero {
+            background: linear-gradient(112deg, #f4efe7 0%, #e9e2d6 100%);
+            margin: 32px 0 48px 0;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.02);
+        }
+        .hero-content h2 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+            color: #2c4233;
+        }
+        .hero-content p {
+            font-size: 1.1rem;
+            color: #4c5e54;
+            max-width: 600px;
+            margin-bottom: 24px;
+        }
+
+        /* секція книг */
+        .section-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin: 32px 0 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="search-wrap">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Пошук за назвою або автором...">
+                </div>
+            </div>
+            <div class="hero">
+                <div class="hero-content">
+                    <h2>Оберіть книгу до душі</h2>
+                    <p>Тисячі історій, що чекають на вас. Від класики до сучасної прози — знайдіть наступну книгу, в яку закохаєтеся.</p>
+                </div>
+            </div>
+
+            <div class="section-title">
+                <h3><i class="fas fa-feather-alt" style="color:#c49a6c; margin-right: 8px;"></i> Книги для вас</h3>
+                <span class="results-count" id="resultsCount">0 книг</span>
+            </div>
+        </div>
+    </main>
+    <script>
+
+    </script>
+    
+</body>
+</html>
